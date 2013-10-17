@@ -1,9 +1,13 @@
-<img src="http://anthonyroldan.net/pdxcw13_logo.png" align="left" width="200">
+<img src="http://anthonyroldan.net/pdxcw13_logo.png" align="left" width="150">
 
 # {{first}} {{last}}
-## Major
+## {{major}}
 
-<p style="clear:both;">
+<p style="clear:both; padding-bottom:2em;">
 </p>
 
-
+{{#each classes}}
+### {{title}} - {{number}}
+#### {{startTimeFormatted}} - {{endTimeFormatted}}
+#### {{location}}
+{{/each}}

@@ -10,7 +10,8 @@
     "coffee-script": "~1.6.3",
     "handlebars": "~1.0.12",
     "request": "~2.27.0",
-    "markdown-pdf": "~1.1.1"
+    "markdown-pdf": "~1.1.1",
+    "q": "~0.9.7"
   },
   "devDependencies": {},
   "optionalDependencies": {},
