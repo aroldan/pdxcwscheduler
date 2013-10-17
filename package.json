@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "coffee-script": "~1.6.3",
-    "handlebars": "~1.0.12"
+    "handlebars": "~1.0.12",
+    "request": "~2.27.0",
+    "markdown-pdf": "~1.1.1"
   },
   "devDependencies": {},
   "optionalDependencies": {},
