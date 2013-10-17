@@ -1,0 +1,18 @@
+{
+  "author": "Anthony Roldan <aroldan@gmail.com>",
+  "name": "PdxScheduleBuilder",
+  "description": "Build schedules for PDXCW13",
+  "version": "0.0.0",
+  "repository": {
+    "url": "git@github.com:aroldan/pdxcwscheduler.git"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "handlebars": "~1.0.12"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
