@@ -39,6 +39,8 @@ class MDGenerator
 
 console.log "Fetching data from Google Drive..."
 request SOURCE_URL, (err, resp, body) ->
+  if !fs.existsSync "output"
+    fs.mkdirSync "output"
   console.log "Fetch complete, generating documents..."
   gen = new MDGenerator body
   gen.generateMds()

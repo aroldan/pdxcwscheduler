@@ -13,6 +13,10 @@
     "markdown-pdf": "~1.1.1",
     "q": "~0.9.7"
   },
+  "bin": {
+    "pdxcwmagic": "bin/pdxcwmagic"
+  },
+  "main": "./entrypoint.js",
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {
