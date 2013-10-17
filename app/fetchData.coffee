@@ -21,7 +21,7 @@ generatePdf = (s) ->
     outpath = "output/#{fullName}.pdf"
 
     fs.rename pdfPath, outpath, ->
-      console.log "PDF complete for #{s.first} #{s.last}"
+      console.log "PDF complete for #{s.first} #{s.last}, saved to #{outpath}"
       deferred.resolve(outpath)
 
   deferred.promise
@@ -36,6 +36,9 @@ class MDGenerator
   generateMds: ->
     tasks = (@generatePdfForStudent(s) for s in @students)
     tasks.reduce(Q.when, Q())
-      
-gen = new MDGenerator fs.readFileSync "test.json", "utf-8"
-gen.generateMds()
+
+console.log "Fetching data from Google Drive..."
+request SOURCE_URL, (err, resp, body) ->
+  console.log "Fetch complete, generating documents..."
+  gen = new MDGenerator body
+  gen.generateMds()
