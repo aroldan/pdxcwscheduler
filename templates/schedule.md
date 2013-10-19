@@ -7,7 +7,7 @@
 </p>
 
 {{#each classes}}
-### {{title}} - {{number}}
+### {{number}} - {{title}} 
 #### {{startTimeFormatted}} - {{endTimeFormatted}}
 #### {{location}}
 {{/each}}
