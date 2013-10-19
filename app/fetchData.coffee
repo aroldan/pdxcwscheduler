@@ -10,6 +10,8 @@ generatePdf = (s) ->
   deferred = Q.defer()
 
   applyTemplateToMd = (mdString) ->
+    if mdString.toString
+      mdString = mdString.toString("utf-8")
     template = Handlebars.compile mdString
     template s
 
